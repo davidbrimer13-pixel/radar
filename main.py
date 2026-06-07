@@ -22,7 +22,11 @@ def on_forever():
         seeking = 0
     if seek:
         if seeking:
-            basic.show_icon(IconNames.NO)
+            basic.show_icon(IconNames.ASLEEP)
+            basic.pause(500)
+            basic.show_icon(IconNames.SURPRISED)
+            basic.pause(500)
+            basic.show_icon(IconNames.CONFUSED)
         else:
             basic.show_leds("""
                 . . # . .
