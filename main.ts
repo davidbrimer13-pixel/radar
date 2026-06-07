@@ -21,9 +21,13 @@ basic.forever(function on_forever() {
     
     if (seek) {
         if (seeking) {
-            basic.showIcon(IconNames.No)
+            basic.showIcon(IconNames.Asleep)
+            basic.pause(500)
+            basic.showIcon(IconNames.Surprised)
+            basic.pause(500)
+            basic.showIcon(IconNames.Confused)
         } else {
-            basic.showLeds(`
+            basic.show_leds(`
                 . . # . .
                 . # # # .
                 # . # . #
